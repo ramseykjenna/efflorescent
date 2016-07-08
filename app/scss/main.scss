@@ -1,0 +1,153 @@
+@import 'contact';
+@import 'work';
+@import 'mixins';
+@import 'materialize';
+.dash {
+    width: 2em;
+    height: 2px;
+    background-color: $primary-color;
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.nav {
+    height: 10em;
+    position: relative;
+    h5 {
+        @include inline(left);
+        margin: 0;
+        @include v-center;
+        color: $primary-color;
+
+    }
+    .menu-icon {
+        @include inline(right);
+        @include v-center;
+        width: 22px;
+        height: 15px;
+        position: relative;
+        cursor: pointer;
+        -webkit-backface-visibility: hidden;
+        &.active {
+            &.done span {
+                &.top {
+                    -webkit-transform: rotate(140deg);
+                }
+                &.bottom {
+                    -webkit-transform: rotate(-140deg);
+                }
+            }
+            span {
+                &.top {
+                    top: 7px;
+                    -webkit-transform: rotate(160deg);
+                }
+                &.middle {
+                    top: 6px;
+                    opacity: 0.0;
+                }
+                &.bottom {
+                    top: 7px;
+                    -webkit-transform: rotate(-160deg);
+                }
+            }
+        }
+        &.done span {
+            &.top {
+                -webkit-transform: rotate(-10deg);
+            }
+            &.bottom {
+                -webkit-transform: rotate(10deg);
+            }
+        }
+        span {
+            position: absolute;
+            width: 100%;
+            display: block;
+            height: 3px;
+            background-color: $primary-color;
+            &.top {
+                top: 0px;
+                -webkit-transition: all 0.3s ease-in-out;
+            }
+            &.middle {
+                top: 6px;
+                -webkit-transition: all 0.2s ease-in-out;
+            }
+            &.bottom {
+                top: 12px;
+                -webkit-transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.about {
+    @include inline(left);
+    h6 {
+        color: $primary-color;
+        font-weight: lighter;
+    }
+    p {
+        margin: 0;
+        color: $primary-color-light;
+    }
+}
+
+.contact {
+    @include inline(right);
+    h6 {
+        color: $primary-color;
+    }
+    h1 {
+        font-size: 1em;
+        font-weight: normal;
+        margin: 0;
+        color: $primary-color;
+    }
+    p {
+        margin: 0;
+        color: $primary-color-light;
+    }
+}
+
+.projects {
+    .project {
+        height: 20vw;
+        @media #{$small-and-down} {
+            // styles for small screens and down
+            height: 15em;
+        }
+        @media #{$medium-and-up} {
+    // styles for medium screens and larger
+  }
+    }
+    .row {
+        margin-bottom: 0;
+    }
+    .col {
+        margin-bottom: 23px;
+    }
+    .background {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .atlas {
+        background-image: url(../images/BurnBabyBurn.jpg);
+    }
+    .mixinaid {
+        background-image: url(../images/BurnBabyBurn.jpg);
+    }
+    .ramsey {
+        background-image: url(../images/BurnBabyBurn.jpg);
+    }
+    .pomp {
+        background-image: url(../images/BurnBabyBurn.jpg);
+    }
+}
