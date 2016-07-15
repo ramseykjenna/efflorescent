@@ -19,7 +19,13 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
 
     <!-- ionicons -->
-    <link rel='stylesheet' href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel='stylesheet' href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Ink Styles -->
+    <link rel="stylesheet" href="styles/ink.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/favicon.ico">
 </head>
 
 <body ng-app="efflorescentApp">
@@ -28,18 +34,42 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <div ng-controller="NavCtrl">
 
-    <div class="nav container" ng-controller="NavCtrl">
-        <h5>Jenna K. Ramsey</h5>
-        <div class="menu-icon">
-            <span class="top">&nbsp</span>
-            <span class="middle">&nbsp</span>
-            <span class="bottom">&nbsp</span>
+        <div class="nav container">
+            <h1>Jenna K. Ramsey</h1>
+            <div class="menu-icon" ng-class="{'active':open,'done':done}" ng-click="open = !open">
+                <span class="top">&nbsp</span>
+                <span class="middle">&nbsp</span>
+                <span class="bottom">&nbsp</span>
+            </div>
         </div>
     </div>
+
     <div class="container">
         <div ng-view=""></div>
     </div>
+
+    <div class="cd-modal">
+        <div class="modal-content">
+            <div class="menu">
+                <a href="#/"><span>Home</span></a>
+                <a href="#/work"><span>Work</span></a>
+                <a href="#/contact"><span>About + Contact</span></a>
+                <a href="#/blog"><span>Blog</span></a>
+            </div>
+
+        </div>
+        <!-- .modal-content -->
+
+    </div>
+    <!-- .cd-modal -->
+
+    <div class="cd-transition-layer">
+        <div class="bg-layer"></div>
+    </div>
+    <!-- .cd-transition-layer -->
+
 
 
 
@@ -82,9 +112,36 @@
     <script src="scripts/controllers/work.js"></script>
     <script src="scripts/controllers/contact.js"></script>
     <script src="scripts/controllers/nav.js"></script>
+    <script src="scripts/controllers/testing.js"></script>
+    <script src="scripts/controllers/blog.js"></script>
     <!-- endbuild -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="scripts/ink.js"></script>
 </body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h2>Connect</h2>
+                <div class="dash"></div>
+                <a target="_blank" href="https://twitter.com/jennakayyyyy"><i class="ion-social-twitter-outline"></i></a>
+                <a target="_blank" href="https://www.instagram.com/theothegsd/"><i class="ion-social-instagram-outline"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jenna-ramsey-a6a05257
+"><i class="ion-social-linkedin-outline"></i></a>
+                <a target="_blank" href="http://codepen.io/ramseykjenna/"><i class="ion-social-codepen-outline"></i></a>
+            </div>
+            <div class="col l6 s12">
+                <h2>Efflorescent</h2>
+                <div class="dash"></div>
+
+                <p>adjective</p>
+                <p>a. a gradual process of unfolding or developing </p>
+                <p>b. an example or result of growth and development</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>

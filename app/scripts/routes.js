@@ -25,5 +25,13 @@ angular.module('efflorescentApp')
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })
+      .when('/testing', {
+        templateUrl: 'views/testing.html',
+        controller: 'TestingCtrl'
+      })
+      .when('/blog', {
+        templateUrl: 'views/blog.html',
+        controller: 'BlogCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }]);

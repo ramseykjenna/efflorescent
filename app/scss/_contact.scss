@@ -1,0 +1,79 @@
+$primary-color: #777773 !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+
+.background {
+    width: 100%;
+    height: 30em;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headshot {
+    background-image: url(../images/Headshot.JPG);
+}
+
+.theo {
+    background-image: url(../images/Theodore.JPG);
+}
+
+.snowboard {
+    background-image: url(../images/snowboard.jpg);
+}
+
+.profile {
+    h2 {
+        color: $primary-color;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    p {
+        color: $primary-color-light;
+        padding-right: 1em;
+    }
+}
+
+.interests {
+    h2 {
+        color: $primary-color;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    ul {
+        li {
+            color: $primary-color-light;
+        }
+    }
+}
+
+.skills {
+    h2 {
+        color: $primary-color;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    ul {
+        li {
+            color: $primary-color-light;
+        }
+    }
+}
+
+.contact {
+    h2 {
+        color: $primary-color;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+}
+.info {
+    h2 {
+        color: $primary-color;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1em;
+        color: $primary-color-light;
+    }
+}

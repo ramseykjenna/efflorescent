@@ -2,28 +2,54 @@
 @import 'work';
 @import 'mixins';
 @import 'materialize';
+@import 'testing';
+@import 'blog';
 .dash {
     width: 2em;
     height: 2px;
-    background-color: $primary-color;
-    margin-bottom: 15px;
+    background-color: $primary-color-light;
+    margin: 1em 0;
 }
 
 body {
     font-family: 'Fira Sans', sans-serif;
+//    background: linear-gradient(to right, white, lighten($purps, 50%));
+}
+
+.menu {
+    width: auto;
+    height: auto;
+    @include centerer;
+    text-align: center;
+    span {
+        margin: 0 1em;
+        font-size: 2em;
+        color: lighten($primary-color, 20%);
+        cursor: pointer;
+    }
+    span:hover {
+        color: darken(white,5%);
+    }
+}
+
+.nav-show {
+    opacity: 1;
 }
 
 .nav {
     height: 10em;
     position: relative;
-    h5 {
+    h1 {
         @include inline(left);
         margin: 0;
         @include v-center;
-        color: $primary-color;
-
+        color: $purps;
+        font-size: 2em;
+        font-family: 'Fira Sans';
+        font-style: normal;
     }
     .menu-icon {
+        z-index: 999;
         @include inline(right);
         @include v-center;
         width: 22px;
@@ -56,6 +82,7 @@ body {
             }
         }
         &.done span {
+            background-color: $primary-color-light;
             &.top {
                 -webkit-transform: rotate(-10deg);
             }
@@ -68,7 +95,7 @@ body {
             width: 100%;
             display: block;
             height: 3px;
-            background-color: $primary-color;
+            background-color: $purps;
             &.top {
                 top: 0px;
                 -webkit-transition: all 0.3s ease-in-out;
@@ -85,24 +112,46 @@ body {
     }
 }
 
-.about {
-    @include inline(left);
-    h6 {
-        color: $primary-color;
-        font-weight: lighter;
+footer {
+    h2 {
+        color: $purps;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    i {
+        font-size: 1.5em;
+        color: $primary-color-light;
+        margin-right: 1em;
+    }
+    i:hover {
+        color: $purps;
     }
     p {
-        margin: 0;
+        color: $primary-color-light;
+    }
+}
+
+.about {
+    @include inline(left);
+    h2 {
+        color: $purps;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    p {
+        //        margin: 0;
         color: $primary-color-light;
     }
 }
 
 .contact {
     @include inline(right);
-    h6 {
-        color: $primary-color;
+    h2 {
+        color: $purps;
+        font-size: 1.5em;
+        margin-bottom: 0;
     }
-    h1 {
+    h3 {
         font-size: 1em;
         font-weight: normal;
         margin: 0;
@@ -111,25 +160,43 @@ body {
     p {
         margin: 0;
         color: $primary-color-light;
+        margin-bottom: 1.5em;
     }
 }
 
+.section {
+    margin-top: 2em;
+}
+
 .projects {
+    h2 {
+        color: $purps;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
     .project {
         height: 20vw;
+        position: relative;
         @media #{$small-and-down} {
             // styles for small screens and down
             height: 15em;
         }
         @media #{$medium-and-up} {
-    // styles for medium screens and larger
-  }
+            // styles for medium screens and larger
+        }
+    }
+    .project:hover {
+        .overlay {
+            opacity: 1;
+        }
     }
     .row {
         margin-bottom: 0;
     }
     .col {
-        margin-bottom: 23px;
+        padding: 12px;
+        margin: 0;
+        //        margin-bottom: 23px;
     }
     .background {
         width: 100%;
@@ -138,16 +205,55 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    .padding {
+        padding: 4em;
+        width: 100%;
+        height: 100%;
+        background-color: lighten($ltgrey, 3%);
+        .background {
+            background-size: contain;
+        }
+    }
+    .overlay {
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        position: absolute;
+        background-color: $ltgrey;
+        opacity: 0;
+        transition: 200ms ease-in-out;
+        padding: 1.5em;
+        h2 {
+            color: $purps;
+            font-size: 1.5em;
+            margin-bottom: .5em;
+        }
+        p {
+            color: $primary-color-light;
+        }
+    }
     .atlas {
         background-image: url(../images/BurnBabyBurn.jpg);
     }
     .mixinaid {
-        background-image: url(../images/BurnBabyBurn.jpg);
-    }
-    .ramsey {
-        background-image: url(../images/BurnBabyBurn.jpg);
+        background-image: url(../images/MixinAidLogo.png);
     }
     .pomp {
-        background-image: url(../images/BurnBabyBurn.jpg);
+        background-image: url(../images/POMP-logo.png);
+    }
+    .ramsey {
+        background-image: url(../images/ramsey-armstrong.jpg);
+    }
+}
+
+.code {
+    h2 {
+        color: $purps;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    iframe {
+        margin-bottom: 2em;
     }
 }
