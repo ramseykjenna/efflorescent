@@ -5,6 +5,7 @@
 @import 'testing';
 @import 'blog';
 @import 'ink';
+@import 'thanks';
 .dash {
     width: 2em;
     height: 2px;
@@ -125,6 +126,7 @@ body {
 }
 
 footer {
+    margin-top: 2em;
     h2 {
         color: $purps;
         font-size: 1.5em;

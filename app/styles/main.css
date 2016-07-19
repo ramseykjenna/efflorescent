@@ -6172,10 +6172,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       color: #9d9d9a; }
 
 .headshot {
-  background-image: url(../images/Headshot.JPG); }
+  background-image: url(../images/Headshot.jpg); }
 
 .theo {
-  background-image: url(../images/Theodore.JPG); }
+  background-image: url(../images/Theodore.jpg); }
 
 .snowboard {
   background-image: url(../images/snowboard.jpg); }
@@ -6381,7 +6381,7 @@ Modal window
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: #402f44 url(../img/modal-bg.jpg) no-repeat center center;
+  background: #402f44 url(../images/modal-bg.jpg) no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
@@ -6405,7 +6405,7 @@ Modal window
   display: block;
   width: 130px;
   height: 18px;
-  background: url(../img/ink-separation.svg) no-repeat center center;
+  background: url(../images/ink-separation.svg) no-repeat center center;
   margin: .2em auto 0; }
 
 .cd-modal p {
@@ -6422,7 +6422,7 @@ Modal window
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3) url(../img/cd-icon-close.svg) no-repeat center center;
+  background: rgba(0, 0, 0, 0.3) url(../images/cd-icon-close.svg) no-repeat center center;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
@@ -6503,7 +6503,7 @@ Transition Layer
   height: 100%;
   /* our sprite is composed of 25 frames */
   width: 2500%;
-  background: url(../img/ink.png) no-repeat 0 0;
+  background: url(../images/ink.png) no-repeat 0 0;
   background-size: 100% 100%; }
 
 .cd-transition-layer.visible {
@@ -6581,6 +6581,18 @@ Transition Layer
     -ms-transform: translateY(-50%) translateX(-2%);
     -o-transform: translateY(-50%) translateX(-2%);
     transform: translateY(-50%) translateX(-2%); } }
+.thanks {
+  position: relative; }
+  .thanks h2 {
+    color: #3F3349;
+    font-size: 1.5em;
+    margin-bottom: 0; }
+  .thanks img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
 .dash {
   width: 2em;
   height: 2px;
@@ -6678,18 +6690,20 @@ body {
         top: 12px;
         -webkit-transition: all 0.3s ease-in-out; }
 
-footer h2 {
-  color: #3F3349;
-  font-size: 1.5em;
-  margin-bottom: 0; }
-footer i {
-  font-size: 1.5em;
-  color: #9d9d9a;
-  margin-right: 1em; }
-footer i:hover {
-  color: #3F3349; }
-footer p {
-  color: #9d9d9a; }
+footer {
+  margin-top: 2em; }
+  footer h2 {
+    color: #3F3349;
+    font-size: 1.5em;
+    margin-bottom: 0; }
+  footer i {
+    font-size: 1.5em;
+    color: #9d9d9a;
+    margin-right: 1em; }
+  footer i:hover {
+    color: #3F3349; }
+  footer p {
+    color: #9d9d9a; }
 
 .about {
   position: relative;

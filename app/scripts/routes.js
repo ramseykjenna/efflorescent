@@ -33,6 +33,10 @@ angular.module('efflorescentApp')
                 templateUrl: 'views/blog.html',
                 controller: 'BlogCtrl'
             })
+            .when('/thanks', {
+              templateUrl: 'views/thanks.html',
+              controller: 'ThanksCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });

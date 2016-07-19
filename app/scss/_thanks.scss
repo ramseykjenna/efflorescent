@@ -1,0 +1,11 @@
+.thanks {
+    position: relative;
+    h2 {
+        color: $purps;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    img {
+        @include centerer;
+    }
+}
