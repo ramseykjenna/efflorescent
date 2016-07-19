@@ -2,54 +2,94 @@
     <div class="col s12">
         <div class="background headshot"></div>
     </div>
-</div>
-<div class="row">
-    <div class="col s12 m6">
-        <div class="background theo"></div>
-    </div>
-    <div class="col s12 m6">
-        <div class="background snowboard"></div>
-    </div>
-</div>
-
-
-
-
-<div class="row">
-    <div class="profile col s12 m6">
+    <div class="profile col s12">
         <h2>Profile</h2>
         <div class="dash"></div>
         <p>Jenna Ramsey is a UI designer and developer, and over the past two years has worked as a freelancer in addition to one of Austin's top start-up companies.</p>
         <p>Jenna is passionate about clean, elegant design and combines knowledge and experience to create beautiful and functional user interfaces. She wholeheartedly believes a user's experience should be enjoyable.</p>
     </div>
-    <div class="interests col s12 m3">
-        <h2>Interests</h2>
-        <div class="dash"></div>
-        <ul>
-            <li>Animals</li>
-            <li>Animal Welfare</li>
-            <li>Veterinary Technology</li>
-            <li>My dog, Theodore</li>
-            <li>Snowboarding</li>
-            <li>Music</li>
-            <li>Travel</li>
-            <li>Food</li>
-
-        </ul>
+</div>
+<div class="row">
+    <div class="col s12 m6">
+        <div class="background theo"></div>
     </div>
-    <div class="skills col s12 m3">
-        <h2>Skills</h2>
+    <div class="col s12 m6 grey-back">
+        <div class="grey-content">
+            <div class="interests col s6">
+                <h2>Interests</h2>
+                <div class="dash"></div>
+                <ul>
+                    <li>Animals</li>
+                    <li>Animal Welfare</li>
+                    <li>Veterinary Technology</li>
+                    <li>My dog, Theodore</li>
+                    <li>Snowboarding</li>
+                    <li>Music</li>
+                    <li>Travel</li>
+                    <li>Food</li>
+
+                </ul>
+            </div>
+            <div class="skills col s6">
+                <h2>Skills</h2>
+                <div class="dash"></div>
+                <ul>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Invision</li>
+                    <li>Sketch</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Sass</li>
+                    <li>JS</li>
+                    <li>Wordpress</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="row contact-form">
+
+    <div class="col s12 m6">
+        <h2>Contact</h2>
         <div class="dash"></div>
-        <ul>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Invision</li>
-            <li>Sketch</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Sass</li>
-            <li>JS</li>
-            <li>Wordpress</li>
-        </ul>
+        <form class="col s12" action="https://formspree.io/ramseykjenna@gmail.com" method="POST">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" class="validate" name="name">
+                    <label for="icon_prefix">Name</label>
+
+                </div>
+                <div class="input-field col s12">
+                    <input type="tel" class="validate" name="_phone">
+                    <label for="icon_telephone">Telephone</label>
+                </div>
+
+                <!-- Formspree config -->
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_subject" value="Efflorescent Inquiry" />
+                <input type="hidden" name="_next" value="https://efflorescent.com/#/thanks" />
+
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" name="_replyto">
+                    <label for="email" data-error="is that an email address?" data-success="looks good..">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" name="_message"></textarea>
+                    <label for="textarea1">Enter message here</label>
+                </div>
+                <button class="submit" type="submit" value="Send" name="action">Submit
+                </button>
+
+
+            </div>
+        </form>
+    </div>
+    <div class="col s12 m6">
+        <div class="background snowboard"></div>
     </div>
 </div>

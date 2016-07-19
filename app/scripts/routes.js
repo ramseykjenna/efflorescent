@@ -9,29 +9,31 @@
  */
 angular.module('efflorescentApp')
 
-  .config(['$routeProvider', function($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
+.config(['$routeProvider', function ($routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'views/main.html',
+                controller: 'MainCtrl'
+            })
 
 
-      .when('/work', {
-        templateUrl: 'views/work.html',
-        controller: 'WorkCtrl'
-      })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
-      })
-      .when('/testing', {
-        templateUrl: 'views/testing.html',
-        controller: 'TestingCtrl'
-      })
-      .when('/blog', {
-        templateUrl: 'views/blog.html',
-        controller: 'BlogCtrl'
-      })
-      .otherwise({redirectTo: '/'});
+        .when('/work', {
+                templateUrl: 'views/work.html',
+                controller: 'WorkCtrl'
+            })
+            .when('/contact', {
+                templateUrl: 'views/contact.html',
+                controller: 'ContactCtrl'
+            })
+            .when('/testing', {
+                templateUrl: 'views/testing.html',
+                controller: 'TestingCtrl'
+            })
+            .when('/blog', {
+                templateUrl: 'views/blog.html',
+                controller: 'BlogCtrl'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
   }]);

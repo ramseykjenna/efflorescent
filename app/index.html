@@ -21,9 +21,6 @@
     <!-- ionicons -->
     <link rel='stylesheet' href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-    <!-- Ink Styles -->
-    <link rel="stylesheet" href="styles/ink.css">
-
     <!-- favicon -->
     <link rel="icon" href="/favicon.ico">
 </head>
@@ -37,38 +34,41 @@
     <div ng-controller="NavCtrl">
 
         <div class="nav container">
-            <h1>Jenna K. Ramsey</h1>
+            <a href="#/">
+                <h1>Jenna K. Ramsey</h1>
+            </a>
             <div class="menu-icon" ng-class="{'active':open,'done':done}" ng-click="open = !open">
                 <span class="top">&nbsp</span>
                 <span class="middle">&nbsp</span>
                 <span class="bottom">&nbsp</span>
             </div>
         </div>
+        <div class="cd-modal">
+            <div class="modal-content">
+                <div class="menu">
+                    <span ng-click="changeRoute('home')">Home</span>
+                    <span ng-click="changeRoute('work')">Work</span>
+                    <span ng-click="changeRoute('contact')">About + Contact</span>
+                    <span ng-click="changeRoute('blog')">Blog</span>
+                </div>
+
+            </div>
+            <!-- .modal-content -->
+
+        </div>
+        <!-- .cd-modal -->
+
+        <div class="cd-transition-layer">
+            <div class="bg-layer"></div>
+        </div>
+        <!-- .cd-transition-layer -->
+
+
     </div>
 
     <div class="container">
         <div ng-view=""></div>
     </div>
-
-    <div class="cd-modal">
-        <div class="modal-content">
-            <div class="menu">
-                <a href="#/"><span>Home</span></a>
-                <a href="#/work"><span>Work</span></a>
-                <a href="#/contact"><span>About + Contact</span></a>
-                <a href="#/blog"><span>Blog</span></a>
-            </div>
-
-        </div>
-        <!-- .modal-content -->
-
-    </div>
-    <!-- .cd-modal -->
-
-    <div class="cd-transition-layer">
-        <div class="bg-layer"></div>
-    </div>
-    <!-- .cd-transition-layer -->
 
 
 
@@ -117,7 +117,10 @@
     <!-- endbuild -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-    <script src="scripts/ink.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
 </body>
 
 <footer>

@@ -1,0 +1,78 @@
+.projects {
+    h2 {
+        color: $purps;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    .project {
+        height: 20vw;
+        position: relative;
+        @media #{$small-and-down} {
+            // styles for small screens and down
+            height: 15em;
+        }
+        @media #{$medium-and-up} {
+            // styles for medium screens and larger
+        }
+    }
+    .project:hover {
+        .overlay {
+            opacity: 1;
+        }
+    }
+    .row {
+        margin-bottom: 0;
+    }
+    .col {
+        padding: 12px;
+        margin: 0;
+        //        margin-bottom: 23px;
+    }
+    .background {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .padding {
+        padding: 5vw;
+        width: 100%;
+        height: 100%;
+        background-color: lighten($ltgrey, 3%);
+        .background {
+            background-size: contain;
+        }
+    }
+    .overlay {
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        position: absolute;
+        background-color: $ltgrey;
+        opacity: 0;
+        transition: 200ms ease-in-out;
+        padding: 1.5em;
+        h2 {
+            color: $purps;
+            font-size: 1.5em;
+            margin-bottom: .5em;
+        }
+        p {
+            color: $primary-color-light;
+        }
+    }
+    .atlas {
+        background-image: url(../images/BurnBabyBurn.jpg);
+    }
+    .mixinaid {
+        background-image: url(../images/MixinAidLogo.png);
+    }
+    .pomp {
+        background-image: url(../images/POMP-logo.png);
+    }
+    .ramsey {
+        background-image: url(../images/ramsey-armstrong.jpg);
+    }
+}
