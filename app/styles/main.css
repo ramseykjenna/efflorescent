@@ -6134,7 +6134,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .contact-form #textarea1 {
   min-height: 13.75rem; }
 .contact-form h2 {
-  color: #777773;
+  color: #3F3349;
   font-size: 1.5em;
   margin-bottom: 0; }
 .contact-form label {
@@ -6159,13 +6159,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     top: 50%;
     transform: translate(-50%, -50%); }
     .grey-back .grey-content .interests h2 {
-      color: #777773;
+      color: #3F3349;
       font-size: 1.5em;
       margin-bottom: 0; }
     .grey-back .grey-content .interests ul li {
       color: #9d9d9a; }
     .grey-back .grey-content .skills h2 {
-      color: #777773;
+      color: #3F3349;
       font-size: 1.5em;
       margin-bottom: 0; }
     .grey-back .grey-content .skills ul li {
@@ -6181,7 +6181,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-image: url(../images/snowboard.jpg); }
 
 .profile h2 {
-  color: #777773;
+  color: #3F3349;
   font-size: 1.5em;
   margin-bottom: 0; }
 .profile p {
@@ -6189,7 +6189,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding-right: 1em; }
 
 .contact h2 {
-  color: #777773;
+  color: #3F3349;
   font-size: 1.5em;
   margin-bottom: 0; }
 
@@ -6582,16 +6582,69 @@ Transition Layer
     -o-transform: translateY(-50%) translateX(-2%);
     transform: translateY(-50%) translateX(-2%); } }
 .thanks {
+  height: 600px;
   position: relative; }
-  .thanks h2 {
-    color: #3F3349;
-    font-size: 1.5em;
-    margin-bottom: 0; }
-  .thanks img {
+  .thanks .thanks-content {
+    height: auto;
+    width: 20em;
     position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translateX(-50%); }
+    .thanks .thanks-content h2 {
+      color: #3F3349;
+      font-size: 1.5em;
+      margin-bottom: 0; }
+    .thanks .thanks-content p {
+      color: #9d9d9a; }
+    .thanks .thanks-content .theo-pic {
+      position: relative;
+      width: 100%;
+      height: 20em; }
+      .thanks .thanks-content .theo-pic .theo-background {
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/theo.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat; }
+      .thanks .thanks-content .theo-pic .overlay {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: #F2F1EF;
+        opacity: 0;
+        transition: 200ms ease-in-out;
+        padding: 1.5em; }
+        .thanks .thanks-content .theo-pic .overlay .overlay-content {
+          width: 100%;
+          height: 100%;
+          position: relative; }
+          .thanks .thanks-content .theo-pic .overlay .overlay-content .center-content {
+            height: auto;
+            width: 100%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            transform: translateY(0);
+            position: relative; }
+            .thanks .thanks-content .theo-pic .overlay .overlay-content .center-content i {
+              font-size: 5em;
+              color: #9d9d9a;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              top: -1em; }
+            .thanks .thanks-content .theo-pic .overlay .overlay-content .center-content h1 {
+              margin: 0;
+              font-style: normal;
+              font-family: 'Fira Sans';
+              font-size: 1.2em;
+              color: #9d9d9a;
+              text-align: center; }
+    .thanks .thanks-content .theo-pic:hover .overlay {
+      opacity: 1; }
 
 .dash {
   width: 2em;

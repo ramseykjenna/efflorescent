@@ -16,7 +16,7 @@ $primary-color-light: lighten($primary-color, 15%) !default;
         min-height: 13.75rem;
     }
     h2 {
-        color: $primary-color;
+        color: $purps;
         font-size: 1.5em;
         margin-bottom: 0;
     }
@@ -45,7 +45,7 @@ $primary-color-light: lighten($primary-color, 15%) !default;
         @include centerer(absolute);
         .interests {
             h2 {
-                color: $primary-color;
+                color: $purps;
                 font-size: 1.5em;
                 margin-bottom: 0;
             }
@@ -57,7 +57,7 @@ $primary-color-light: lighten($primary-color, 15%) !default;
         }
         .skills {
             h2 {
-                color: $primary-color;
+                color: $purps;
                 font-size: 1.5em;
                 margin-bottom: 0;
             }
@@ -84,7 +84,7 @@ $primary-color-light: lighten($primary-color, 15%) !default;
 
 .profile {
     h2 {
-        color: $primary-color;
+        color: $purps;
         font-size: 1.5em;
         margin-bottom: 0;
     }
@@ -96,7 +96,7 @@ $primary-color-light: lighten($primary-color, 15%) !default;
 
 .contact {
     h2 {
-        color: $primary-color;
+        color: $purps;
         font-size: 1.5em;
         margin-bottom: 0;
     }
